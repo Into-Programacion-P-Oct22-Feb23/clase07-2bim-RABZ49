@@ -5,6 +5,7 @@
  */
 package manejoexepciones;
 
+import java.util.IllegalFormatException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -23,7 +24,7 @@ public class Ejemplo06 {
             int valor2 = entrada.nextInt(); // se espera un valor entero
             int resultado = valor1 / valor2;
             double resultado2 = (double)resultado;
-            System.out.printf("Resultado %d", resultado2);
+            System.out.printf("Resultado %d\n", resultado2);
         }
         catch (InputMismatchException inputMismatchException) {
             
@@ -36,6 +37,13 @@ public class Ejemplo06 {
             System.out.printf("De tipo %s\n", arithmeticException);
         
         }
+        catch(IllegalFormatException e){
+            
+            System.out.println("Lo sentimos hay un error");
+            System.out.printf("De tipo %s\n", e);
+        
+        }
+        
                
     }
 }

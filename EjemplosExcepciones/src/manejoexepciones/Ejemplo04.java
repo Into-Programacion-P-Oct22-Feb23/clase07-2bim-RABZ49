@@ -24,14 +24,14 @@ public class Ejemplo04 {
             int valor2 = entrada.nextInt(); // se espera un valor entero
             int resultado = valor1 / valor2;
 
-            System.out.printf("Resultado %d", resultado);
-        } catch (InputMismatchException inputMismatchException) {
+            System.out.printf("Resultado %d\n", resultado);
+        } catch (InputMismatchException e) {
 
             System.out.printf("Existe un error de tipo %s\n",
-                    inputMismatchException);
+                    e);
         }
         
-        System.out.println("Continuamos");
+        System.out.println("Continuamos\n");
 
     }
 }
